@@ -1,0 +1,31 @@
+Reserva = c(rep("A", 10), rep("B", 10))
+Macacos = c(22,28,37,34,13,24,39,5,33,32,7,15,12,14,4,14,16,60,13,16)
+Frutíferas = c(25,26,40,30,10,20,35,8,35,28,6,17,18,11,6,15,20,16,12,15)
+
+macac = data.frame(Reserva, Macacos, Frutíferas)
+
+is.factor(macac$Reserva)
+
+macac$Reserva = as.character(macac$Reserva)
+
+mode(macac$Reserva)
+is.character(macac$Reserva)
+
+macac$Macacos
+
+macac$Macacos[12]
+
+Mortes = c(2,7,1,2,7,4,2,4,3,9,6,6,4,1,3,1,7,2,1,8)
+macac$Mortes = Mortes
+
+macac = macac[ , -which(names(macac) == "Frutíferas")]
+
+A = macac[macac$Reserva == "A", ]
+
+mean(A$Macacos)
+mean(A$Mortes)
+
+A = A[order(A$Mortes), ]
+
+macac_A = macac[macac$Reserva == "A", ]
+macac_B = macac[macac$Reserva == "B", ]
