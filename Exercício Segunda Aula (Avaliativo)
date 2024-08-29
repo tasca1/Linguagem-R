@@ -1,0 +1,92 @@
+#EXERCICIO DA SEGUNDA AULA
+#exercicio 1
+
+seq_a = seq(1, 5)
+print(seq_a)
+
+seq_b = seq(5, 1)
+print(seq_b)
+
+seq_c = seq(1, 20, by=5)
+print(seq_c)
+
+seq_d = seq(20, 1, by=-5)
+print(seq_d)
+
+seq_e = seq(20, 1, by=-5)
+print(seq_e)
+
+#exercicio  2
+
+rep_a = rep(6, 8)
+print(rep_a)
+
+
+rep_b = rep(c(2, 3), 5)
+print(rep_b)
+
+
+rep_c = rep(c(2, 3, 5), 5)
+print(rep_c)
+
+
+concat_d = c(rep(2, 4), rep(3, 5))
+print(concat_d)
+
+
+concat_e = c(rep(1, 5), rep(2, 3), rep(3, 5))
+print(concat_e)
+
+#exercicio 3
+
+seq_exer3 = seq(5, 10)
+
+print(seq_exer3[3])
+
+print(seq_exer3[1:4])
+
+print(seq_exer3[c(1, 4)])
+
+print(seq_exer3[seq_exer3 > 7])
+
+print(seq_exer3[seq_exer3 < 7])
+
+print(seq_exer3[!(seq_exer3 %in% c(6, 7))])
+
+#exercicio 4
+
+seq_exer4 = seq(1, 11, by=2)
+print(seq_exer4)
+
+seq2_exer4 = matrix(seq_exer4, nrow=3, ncol=2, byrow=TRUE)
+print(seq2_exer4)
+
+print(seq2_exer4[1, 2])
+
+summary(seq2_exer4)
+
+#exercicio 5
+
+matriz_exer5 = matrix(1:20, ncol=4)
+print(matriz_exer5)
+
+matriz2_exer5 = cbind(matriz_exer5, 4:8)
+print(matriz2_exer5)
+
+matriz2_exer5 = rbind(matriz2_exer5, 1:5)
+print(matriz2_exer5)
+
+print(matriz2_exer5[3, 2])
+
+print(matriz2_exer5[, 3])
+
+print(matriz2_exer5[3, ])
+
+#exercicio 6 
+
+array_exer6 = array(1:16, dim = c(4, 2, 2))
+print(array_exer6)
+
+print(array_exer6[2, 2, 2])
+
+
